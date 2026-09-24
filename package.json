@@ -1,0 +1,41 @@
+{
+    "name": "artiloft-manager",
+    "version": "1.0.0",
+    "description": "Console shell (Midnight Commander-like) for managing web projects: Shopify stores, scrapers, migrations",
+    "type": "module",
+    "main": "index.js",
+    "exports": {
+        ".": "./index.js",
+        "./*": "./lib/*.js"
+    },
+    "files": [
+        "index.js",
+        "lib/"
+    ],
+    "engines": {
+        "node": ">=18"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/voy22/artiloft-manager.git"
+    },
+    "homepage": "https://github.com/voy22/artiloft-manager#readme",
+    "bugs": {
+        "url": "https://github.com/voy22/artiloft-manager/issues"
+    },
+    "keywords": [
+        "shopify",
+        "graphql",
+        "console",
+        "tui",
+        "blessed",
+        "scraper",
+        "migration"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.7.9",
+        "blessed": "^0.1.81"
+    }
+}
