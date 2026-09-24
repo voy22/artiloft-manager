@@ -90,7 +90,7 @@ function init(target, install) {
 
     if (install) {
         console.log('\nnpm install');
-        const result = spawnSync('npm', ['install'], { cwd: target, stdio: 'inherit', shell: true });
+        const result = spawnSync('npm install', { cwd: target, stdio: 'inherit', shell: true });
         if (result.status !== 0) process.exit(result.status || 1);
     }
 
